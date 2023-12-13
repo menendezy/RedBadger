@@ -14,7 +14,7 @@ class RedditPosterWithFlair:
         flairs = self.reddit.post("r/"+subreddit_name+"/api/flairselector/", data={"is_newlink": True})["choices"]
         return flairs
 
-    def set_flair_and_post(self, subreddit_name, FlairText, FlairId , title , content):
+    def set_flair_and_post(self, subreddit_name, FlairText, FlairId , title , content , linkTitle , linkUrl, useLinkPost):
 
         # Select a subreddit
         subreddit = self.reddit.subreddit(subreddit_name)
@@ -28,9 +28,10 @@ class RedditPosterWithFlair:
         # Create a post with flair
         title = title
         selftext = content
-        submission = subreddit.submit(title, selftext=selftext, flair_id=flair_template_id)
-        
-
+        if useLinkPost:
+            submission = subreddit.submit(linkTitle, url=linkUrl, flair_id=flair_template_id)
+        else:
+            submission = subreddit.submit(title, selftext=selftext, flair_id=flair_template_id)
       
 
         

@@ -33,7 +33,7 @@ log_directory = settings.LOG_DIRECTORY
 logger = Logger(log_directory)
 
 
-RedComs = [RedCom(name, arg2, arg3) for name, arg2, arg3 in settings.RedComs]
+RedComs = [RedCom(name, arg2, arg3 , arg4 ) for name, arg2, arg3, arg4  in settings.RedComs]
 
 RedCom0 = RedCom("bagertester","9d656802-9904-11ee-8b5e-4a285bc43423","Test34")
 

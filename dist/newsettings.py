@@ -20,15 +20,22 @@ The community was formed to bring together like-minded gamers into an inclusive,
 Do you feel the urge to embrace your inner Badger? Then join us!
 https://discord.gg/hAWrv9r9wd
 """
-UseDebug = True
+LinkTitle = "[PC][25+] 🦡 Join The Badgers Fellowship! 🦡 Mature and relaxed gaming community 🎉 Game nights 🌟 Guaranteed daily activity in voice and text 🌟 Active and friendly 🙌 All skill levels and non-toxic"
 
-# RedditCom Name , flairId, flairname  
-RedCom1 = ("DiscordServerPromos","","")
-RedCom2 = ("DiscordAdvertising","","")
-RedCom3 = ("findaserver","","")
-RedCom4 = ("discordservers_","","")
-RedCom5 = ("LookingForGamers","","")
-RedCom6 = ("AdvertiseYourServer","","")
+LinkUrl = "https://discord.gg/hAWrv9r9wd"
+
+
+UseDebug = True
+UseLinkPost = True
+
+
+# RedditCom Name , flairId, flairname  , UseLinkPost
+RedCom1 = ("DiscordServerPromos","","" , False)
+RedCom2 = ("DiscordAdvertising","","" , False) 
+RedCom3 = ("findaserver","","" , False)
+RedCom4 = ("discordservers_","","" , False)
+RedCom5 = ("LookingForGamers","","" , False)
+RedCom6 = ("AdvertiseYourServer","","" , True)
 
 RedComs = [RedCom1, RedCom2, RedCom3, RedCom4, RedCom5, RedCom6]
 
